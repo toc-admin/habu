@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const spaces = [
   {
@@ -49,20 +50,19 @@ export default function Spaces() {
   return (
     <section
       id="spaces"
-      className="section-light"
-      style={{ padding: '96px 0', width: '100%' }}
+      className="section-light py-12 sm:py-16 lg:py-24"
+      style={{ width: '100%' }}
     >
       <div
+        className="px-4 sm:px-6 lg:px-12"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
         }}
       >
         {/* Section Header */}
-        <div style={{ maxWidth: '768px', marginBottom: '64px' }} data-animate="reveal-up">
+        <div className="mb-10 lg:mb-16" style={{ maxWidth: '768px' }} data-animate="reveal-up">
           <span
             className="inline-block text-xs font-semibold uppercase text-coral mb-4"
             style={{ letterSpacing: '0.2em' }}
@@ -153,8 +153,8 @@ export default function Spaces() {
                   </div>
 
                   {/* CTA */}
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/kontakt"
                     className="inline-flex items-center gap-2 text-sm font-semibold group/link"
                     style={{ color: '#0a0a0a' }}
                   >
@@ -172,7 +172,7 @@ export default function Spaces() {
                     >
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -5,23 +5,19 @@ import Link from 'next/link';
 
 const footerLinks = {
   prostori: [
-    { label: 'Privatni Uredi', href: '#spaces' },
-    { label: 'Sobe za Sastanke', href: '#spaces' },
-    { label: 'Event Prostor', href: '#spaces' },
-    { label: 'Dnevni Najam', href: '#spaces' },
-    { label: 'Virtualni Ured', href: '#contact' },
+    { label: 'Najam Ureda', href: '/najam-ureda' },
+    { label: 'Sobe za Sastanke', href: '/sobe-za-sastanke' },
+    { label: 'Virtualni Ured', href: '/virtualni-ured' },
+    { label: 'Business Club', href: '/business-club' },
   ],
   tvrtka: [
-    { label: 'O Nama', href: '#' },
-    { label: 'Karijere', href: '#' },
-    { label: 'Blog', href: '#' },
-    { label: 'Press', href: '#' },
+    { label: 'O Nama', href: '/o-nama' },
+    { label: 'Kontakt', href: '/kontakt' },
   ],
   podrska: [
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Kontakt', href: '#contact' },
-    { label: 'Uvjeti Korištenja', href: '#' },
-    { label: 'Privatnost', href: '#' },
+    { label: 'FAQ', href: '/faq' },
+    { label: 'GDPR', href: '/gdpr' },
+    { label: 'Politika Kolačića', href: '/kolacici' },
   ],
 };
 
@@ -32,17 +28,14 @@ export default function Footer() {
     <footer className="section-dark" style={{ width: '100%' }}>
       {/* Main Footer */}
       <div
+        className="px-4 sm:px-6 lg:px-12 py-10 sm:py-12 lg:py-16"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
-          paddingTop: '64px',
-          paddingBottom: '64px',
         }}
       >
-        <div className="grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8">
           {/* Logo & Info */}
           <div className="col-span-2 lg:col-span-4">
             <Link href="/" className="inline-block mb-6">
@@ -72,14 +65,14 @@ export default function Footer() {
           {/* Links - Prostori */}
           <div className="lg:col-span-2 lg:col-start-6">
             <h4 className="text-white font-bold mb-4 text-sm uppercase" style={{ letterSpacing: '0.05em' }}>
-              Prostori
+              Usluge
             </h4>
             <ul className="space-y-3">
               {footerLinks.prostori.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm hover:text-coral transition-colors" style={{ color: '#a3a3a3' }}>
+                  <Link href={link.href} className="text-sm hover:text-coral transition-colors" style={{ color: '#a3a3a3' }}>
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -93,9 +86,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.tvrtka.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm hover:text-coral transition-colors" style={{ color: '#a3a3a3' }}>
+                  <Link href={link.href} className="text-sm hover:text-coral transition-colors" style={{ color: '#a3a3a3' }}>
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -109,9 +102,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {footerLinks.podrska.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm hover:text-coral transition-colors" style={{ color: '#a3a3a3' }}>
+                  <Link href={link.href} className="text-sm hover:text-coral transition-colors" style={{ color: '#a3a3a3' }}>
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -148,13 +141,11 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div style={{ borderTop: '1px solid #262626' }}>
         <div
-          className="py-6"
+          className="py-4 sm:py-6 px-4 sm:px-6 lg:px-12"
           style={{
             maxWidth: '1400px',
             marginLeft: 'auto',
             marginRight: 'auto',
-            paddingLeft: '24px',
-            paddingRight: '24px',
           }}
         >
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4">

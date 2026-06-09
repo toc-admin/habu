@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -51,14 +52,11 @@ export default function Gallery() {
     <section id="gallery" className="section-dark" style={{ width: '100%' }}>
       {/* Header */}
       <div
+        className="px-4 sm:px-6 lg:px-12 py-12 sm:py-16 lg:py-24"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
-          paddingTop: '96px',
-          paddingBottom: '96px',
         }}
       >
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
@@ -149,8 +147,8 @@ export default function Gallery() {
                 Rezervirajte besplatni obilazak i uvjerite se zašto je Habu
                 pravi izbor za vaš tim.
               </p>
-              <a
-                href="#contact"
+              <Link
+                href="/kontakt"
                 className="inline-flex items-center gap-3 px-8 py-4 text-white font-semibold text-sm uppercase transition-colors"
                 style={{ backgroundColor: '#0a0a0a', letterSpacing: '0.05em' }}
                 onMouseEnter={(e) => {
@@ -166,7 +164,7 @@ export default function Gallery() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

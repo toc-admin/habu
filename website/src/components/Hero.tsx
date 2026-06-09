@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import gsap from 'gsap';
 
 export default function Hero() {
@@ -99,13 +100,11 @@ export default function Hero() {
 
       {/* Content */}
       <div
-        className="relative z-10 h-full flex flex-col justify-center"
+        className="relative z-10 h-full flex flex-col justify-center px-4 sm:px-6 lg:px-6 pb-48 sm:pb-40 lg:pb-32"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
         }}
       >
         <div style={{ maxWidth: '900px' }}>
@@ -160,26 +159,26 @@ export default function Hero() {
           </p>
 
           {/* CTA Buttons */}
-          <div ref={ctaRef} className="flex flex-wrap gap-4">
-            <a href="#contact" className="btn-primary">
+          <div ref={ctaRef} className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Link href="/kontakt" className="btn-primary w-full sm:w-auto justify-center">
               <span>Rezerviraj Obilazak</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
-            </a>
-            <a href="#spaces" className="btn-outline-light">
+            </Link>
+            <Link href="/najam-ureda" className="btn-outline-light w-full sm:w-auto justify-center">
               <span>Istraži Prostore</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator - hidden on mobile */}
       <div
         ref={scrollIndicatorRef}
-        className="absolute flex flex-col items-center gap-4"
+        className="absolute hidden lg:flex flex-col items-center gap-4"
         style={{
-          bottom: '32px',
+          bottom: '140px',
           left: '50%',
           transform: 'translateX(-50%)',
         }}
@@ -211,37 +210,35 @@ export default function Hero() {
         className="absolute left-0 right-0"
         style={{
           bottom: 0,
-          backgroundColor: 'rgba(0,0,0,0.5)',
+          backgroundColor: 'rgba(0,0,0,0.7)',
           backdropFilter: 'blur(8px)',
           borderTop: '1px solid rgba(255,255,255,0.1)',
         }}
       >
         <div
-          className="py-6"
+          className="py-4 sm:py-5 lg:py-6 px-4 sm:px-6 lg:px-6"
           style={{
             maxWidth: '1400px',
             marginLeft: 'auto',
             marginRight: 'auto',
-            paddingLeft: '24px',
-            paddingRight: '24px',
           }}
         >
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12">
-            <div className="text-center lg:text-left">
-              <div className="text-3xl lg:text-4xl font-black text-white" data-counter="2500">0</div>
-              <div className="text-sm mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>m² premium prostora</div>
+          <div className="grid grid-cols-4 gap-2 sm:gap-4 lg:gap-12">
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="2500">0</div>
+              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>m² prostora</div>
             </div>
-            <div className="text-center lg:text-left">
-              <div className="text-3xl lg:text-4xl font-black text-white" data-counter="48">0</div>
-              <div className="text-sm mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>privatnih ureda</div>
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="48">0</div>
+              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>ureda</div>
             </div>
-            <div className="text-center lg:text-left">
-              <div className="text-3xl lg:text-4xl font-black text-coral" data-counter="6">0</div>
-              <div className="text-sm mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>soba za sastanke</div>
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-coral" data-counter="6">0</div>
+              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>soba</div>
             </div>
-            <div className="text-center lg:text-left">
-              <div className="text-3xl lg:text-4xl font-black text-white" data-counter="24">0</div>
-              <div className="text-sm mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>/7 pristup</div>
+            <div className="text-center">
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="24">0</div>
+              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>/7</div>
             </div>
           </div>
         </div>

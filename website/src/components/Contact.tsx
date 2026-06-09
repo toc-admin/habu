@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -28,8 +29,8 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="section-dark relative overflow-hidden"
-      style={{ padding: '96px 0', width: '100%' }}
+      className="section-dark relative overflow-hidden py-12 sm:py-16 lg:py-24"
+      style={{ width: '100%' }}
     >
       {/* Background Image */}
       <div className="absolute inset-0" style={{ opacity: 0.2 }}>
@@ -37,16 +38,14 @@ export default function Contact() {
       </div>
 
       <div
-        className="relative z-10"
+        className="relative z-10 px-4 sm:px-6 lg:px-12"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
         }}
       >
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24">
           {/* Left - Content */}
           <div className="flex flex-col justify-center" data-animate="reveal-left">
             <span
@@ -266,7 +265,7 @@ export default function Contact() {
 
               <p className="text-xs text-center" style={{ color: '#737373' }}>
                 Slanjem forme pristajete na našu{' '}
-                <a href="#" className="text-coral hover:underline">politiku privatnosti</a>.
+                <Link href="/gdpr" className="text-coral hover:underline">politiku privatnosti</Link>.
               </p>
             </form>
           </div>

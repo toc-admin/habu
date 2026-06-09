@@ -82,19 +82,18 @@ export default function Amenities() {
   return (
     <section
       id="amenities"
-      className="section-gray"
-      style={{ padding: '96px 0', width: '100%' }}
+      className="section-gray py-12 sm:py-16 lg:py-24"
+      style={{ width: '100%' }}
     >
       <div
+        className="px-4 sm:px-6 lg:px-12"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
         }}
       >
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 items-center">
           {/* Left - Image */}
           <div className="relative" data-animate="reveal-left">
             <div className="relative overflow-hidden" style={{ aspectRatio: '4/5' }}>

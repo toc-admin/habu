@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 const faqs = [
   {
@@ -43,19 +44,18 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="section-gray"
-      style={{ padding: '96px 0', width: '100%' }}
+      className="section-gray py-12 sm:py-16 lg:py-24"
+      style={{ width: '100%' }}
     >
       <div
+        className="px-4 sm:px-6 lg:px-12"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
         }}
       >
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-24">
           {/* Left - Header */}
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-32" data-animate="reveal-up">
@@ -75,8 +75,8 @@ export default function FAQ() {
                 Sve što trebate znati o Habu premium uredima. Ne možete pronaći
                 odgovor? Slobodno nas kontaktirajte.
               </p>
-              <a
-                href="#contact"
+              <Link
+                href="/kontakt"
                 className="inline-flex items-center gap-2 font-semibold group"
                 style={{ color: '#0a0a0a' }}
               >
@@ -92,7 +92,7 @@ export default function FAQ() {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
 

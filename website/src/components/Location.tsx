@@ -4,19 +4,17 @@ export default function Location() {
   return (
     <section
       id="location"
-      className="section-light"
-      style={{ padding: '96px 0', width: '100%' }}
+      className="section-light py-12 sm:py-16 lg:py-24 overflow-hidden w-full max-w-full"
     >
       <div
+        className="px-4 sm:px-6 lg:px-12 w-full"
         style={{
           maxWidth: '1400px',
           marginLeft: 'auto',
           marginRight: 'auto',
-          paddingLeft: '24px',
-          paddingRight: '24px',
         }}
       >
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-24 w-full max-w-full">
           {/* Left - Content */}
           <div className="flex flex-col justify-center">
             <div data-animate="reveal-up">
@@ -90,7 +88,7 @@ export default function Location() {
             </div>
 
             {/* Contact CTA */}
-            <div className="mt-10 flex flex-wrap gap-4" data-animate="reveal-up">
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4" data-animate="reveal-up">
               <a href="tel:+38521123456" className="btn-primary">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
                   <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -107,10 +105,10 @@ export default function Location() {
           </div>
 
           {/* Right - Map */}
-          <div className="relative" data-animate="reveal-right">
+          <div className="relative w-full max-w-full overflow-hidden box-border" data-animate="reveal-right">
             <div
-              className="relative overflow-hidden"
-              style={{ aspectRatio: '1', minHeight: '500px', backgroundColor: '#f5f5f5' }}
+              className="relative overflow-hidden w-full max-w-full"
+              style={{ aspectRatio: '4/3', minHeight: '280px', backgroundColor: '#f5f5f5' }}
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.4!2d16.4402!3d43.5147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMwJzUzLjAiTiAxNsKwMjYnMjQuNyJF!5e0!3m2!1sen!2shr!4v1234567890"
@@ -125,37 +123,34 @@ export default function Location() {
 
               {/* Overlay card */}
               <div
-                className="absolute p-6"
+                className="absolute p-4 sm:p-6 left-3 right-3 bottom-3 sm:left-6 sm:right-6 sm:bottom-6"
                 style={{
-                  bottom: '24px',
-                  left: '24px',
-                  right: '24px',
                   backgroundColor: '#ffffff',
                   boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25)',
                 }}
               >
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-coral flex items-center justify-center">
-                    <svg viewBox="0 0 552.28 158.08" className="w-8 h-8 fill-white">
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-coral flex items-center justify-center flex-shrink-0">
+                    <svg viewBox="0 0 552.28 158.08" className="w-6 h-6 sm:w-8 sm:h-8 fill-white">
                       <path d="M139.71,0h-50.51v128.01H8.39V0H0v158.08h8.39v-21.68h80.81v21.68h8.39v-2.31h42.12v2.31h8.39V0h-8.39ZM139.71,147.39h-42.12v-10.99h42.12v10.99ZM139.71,128.01h-42.12V8.39h42.12v119.62Z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold" style={{ color: '#0a0a0a' }}>Habu</h4>
-                    <p className="text-sm" style={{ color: '#737373' }}>Premium Offices</p>
+                    <h4 className="font-bold text-sm sm:text-base" style={{ color: '#0a0a0a' }}>Habu</h4>
+                    <p className="text-xs sm:text-sm" style={{ color: '#737373' }}>Premium Offices</p>
                   </div>
                 </div>
                 <a
                   href="https://maps.google.com/?q=Split,Croatia"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full py-3 text-white text-sm font-semibold transition-colors"
+                  className="flex items-center justify-center gap-2 w-full py-2 sm:py-3 text-white text-xs sm:text-sm font-semibold transition-colors"
                   style={{ backgroundColor: '#0a0a0a' }}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#F2594B'}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#0a0a0a'}
                 >
                   <span>Otvori u Google Maps</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-3 h-3 sm:w-4 sm:h-4">
                     <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                   </svg>
                 </a>
@@ -163,7 +158,7 @@ export default function Location() {
             </div>
 
             <div
-              className="absolute -z-10"
+              className="absolute -z-10 hidden lg:block"
               style={{
                 top: '-24px',
                 right: '-24px',

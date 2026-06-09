@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import LenisProvider from '@/components/LenisProvider';
 import AnimationProvider from '@/components/AnimationProvider';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import CookieConsent from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
   title: 'Habu | Premium Servisani Uredi u Splitu',
@@ -47,7 +50,10 @@ export default function RootLayout({
       <body>
         <LenisProvider>
           <AnimationProvider>
-            {children}
+            <Navigation />
+            <main className="overflow-x-hidden w-full">{children}</main>
+            <Footer />
+            <CookieConsent />
           </AnimationProvider>
         </LenisProvider>
         <div className="noise-overlay" />
