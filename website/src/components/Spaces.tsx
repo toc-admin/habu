@@ -17,12 +17,12 @@ const spaces = [
   {
     id: 'meeting-room',
     title: 'Sobe za Sastanke',
-    subtitle: 'Kapacitet do 12 osoba',
-    description: 'Impresionirajte klijente u prostoru dizajniranom za uspješne dogovore. Najnovija AV tehnologija i besprijekoran servis.',
-    price: 'od €50',
-    period: '/sat',
+    subtitle: 'Kapacitet do 60 osoba',
+    description: 'Uz sustav rezervacije putem naše aplikacije osigurajte prostor za sastanke kada god vam zatreba. Najnovija AV tehnologija i besprijekoran servis osigurat će vam sve što je potrebno.',
+    price: 'od €60',
+    period: '/dan',
     image: '/images/IMG_7503.JPG',
-    features: ['AV tehnologija', 'Video konferencije', 'Catering opcije', 'Recepcija'],
+    features: ['AV tehnologija', 'Video konferencije', 'Catering opcija', 'Recepcija'],
   },
   {
     id: 'event-space',
@@ -77,8 +77,9 @@ export default function Spaces() {
             <span className="text-coral">odgovara vama</span>
           </h2>
           <p className="text-lg leading-relaxed" style={{ color: '#525252' }}>
-            Od privatnih ureda do fleksibilnih radnih mjesta, imamo rješenje za svaki
-            način rada. Svi prostori dolaze s premium sadržajima i 24/7 pristupom.
+            Od privatnih ureda do fleksibilnih radnih mjesta, imamo rješenje za sve
+            načine rada. Svi prostori dolaze potpuno opremljeni sa svim dostupnim
+            sadržajima i 24/7 pristupom.
           </p>
         </div>
 

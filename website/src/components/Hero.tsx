@@ -133,13 +133,10 @@ export default function Hero() {
             }}
           >
             <span className="hero-line block overflow-hidden">
-              <span>Prostor koji</span>
+              <span>Prostor za rad</span>
             </span>
             <span className="hero-line block overflow-hidden">
-              <span>inspirira</span>
-            </span>
-            <span className="hero-line block overflow-hidden">
-              <span className="text-coral">uspjeh.</span>
+              <span className="text-coral">bez kompromisa.</span>
             </span>
           </h1>
 
@@ -154,8 +151,8 @@ export default function Hero() {
               maxWidth: '540px',
             }}
           >
-            Premium servisani uredi u srcu Splita. Dizajnirani za ambiciozne timove
-            i vizionare koji očekuju izvrsnost u svakom detalju.
+            Bez suvišnih detalja, bez ometanja: samo funkcionalan prostor koji
+            radi za vas.
           </p>
 
           {/* CTA Buttons */}
@@ -225,20 +222,20 @@ export default function Hero() {
         >
           <div className="grid grid-cols-4 gap-2 sm:gap-4 lg:gap-12">
             <div className="text-center">
-              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="2500">0</div>
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="1000">0</div>
               <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>m² prostora</div>
             </div>
             <div className="text-center">
-              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="48">0</div>
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="29">0</div>
               <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>ureda</div>
             </div>
             <div className="text-center">
-              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-coral" data-counter="6">0</div>
-              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>soba</div>
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-coral" data-counter="100">0</div>
+              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>radnih mjesta</div>
             </div>
             <div className="text-center">
-              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white" data-counter="24">0</div>
-              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>/7</div>
+              <div className="text-xl sm:text-2xl lg:text-4xl font-black text-white">Terasa</div>
+              <div className="text-[10px] sm:text-xs lg:text-sm mt-0.5 sm:mt-1" style={{ color: 'rgba(255,255,255,0.6)' }}>vanjski prostor</div>
             </div>
           </div>
         </div>

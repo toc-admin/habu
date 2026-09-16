@@ -80,22 +80,34 @@ export default function AboutPage() {
                 className="font-black leading-tight mb-6"
                 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#0a0a0a' }}
               >
-                Stvoreno iz strasti za <span className="text-coral">izvrsnim prostorima</span>
+                Prostor koji je Splitu <span className="text-coral">dugo nedostajao</span>
               </h2>
               <div className="space-y-4" style={{ color: '#525252' }}>
                 <p className="text-lg leading-relaxed">
-                  Habu je nastao iz uvjerenja da radni prostor može biti više od četiri zida.
-                  Vjerujemo da pravo okruženje može potaknuti kreativnost, produktivnost i uspjeh.
+                  Priča The Office Companyja počinje u povijesnoj zgradi TOZ-a u Zagrebu,
+                  gdje smo otvorili naš prvi coworking koncept pod brendom Desk&amp;Co.
                 </p>
                 <p className="leading-relaxed">
-                  Naš prostor u srcu Splita dizajniran je da pruži sve što ambicioznim tvrtkama
-                  i pojedincima treba za rast - od vrhunske infrastrukture do inspirativne
-                  zajednice istomišljenika.
+                  Prepoznali smo koliko je gradu poput Splita zaista potreban prostor
+                  posvećen ozbiljnom, fokusiranom radu. Ta iskustva postala su temelj za
+                  sljedeći korak.
                 </p>
                 <p className="leading-relaxed">
-                  S preko 2500 kvadratnih metara premium prostora, 48 privatnih ureda i 6 soba
-                  za sastanke, Habu je dom za tvrtke svih veličina - od startupa do etabliranih
-                  korporacija.
+                  U suradnji s vlasnikom prostora i partnerima koji dijele istu viziju,
+                  kreirali smo coworking prostor kakav Split do sada nije imao — mjesto
+                  gdje se kvaliteta ne podrazumijeva, nego se gradi u svaki detalj. Od
+                  odabira ergonomskog namještaja do organizacije prostora, svaka odluka
+                  vođena je jednim pitanjem: hoće li ovo pomoći ljudima da rade bolje?
+                </p>
+                <p className="leading-relaxed">
+                  Vjerujemo da okruženje oblikuje način rada. Zato smo spojili
+                  funkcionalnost, udobnost i pažljivo osmišljen dizajn u prostor koji
+                  podržava koncentraciju, kreativnost i dugoročnu produktivnost — bez
+                  obzira radite li sami, u timu ili gradite novu poslovnu priču.
+                </p>
+                <p className="leading-relaxed">
+                  Habu je rezultat te suradnje: prostor stvoren s jasnom namjerom, za
+                  ljude kojima rad nije samo posao, nego i standard kojeg se drže.
                 </p>
               </div>
             </div>
@@ -109,7 +121,7 @@ export default function AboutPage() {
                 style={{ zIndex: 10 }}
               >
                 <div className="text-center text-white">
-                  <div className="text-4xl font-black">2500</div>
+                  <div className="text-4xl font-black">1000</div>
                   <div className="text-sm">m² prostora</div>
                 </div>
               </div>

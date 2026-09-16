@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: 'Postoji li parking?',
-    answer: 'Da, imamo podzemnu garažu s osiguranim parking mjestima za naše članove. Parking je uključen za sve korisnike privatnih ureda, a za ostale je dostupan po povoljnim cijenama.',
+    answer: 'Postoji mogućnost parkirnog mjesta uz objekt (nemamo garažu). Kontaktirajte nas za dostupnost i uvjete.',
   },
   {
     question: 'Mogu li rezervirati obilazak?',

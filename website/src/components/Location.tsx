@@ -66,7 +66,7 @@ export default function Location() {
                   <p style={{ color: '#525252' }}>
                     5 min do autobusnog kolodvora<br />
                     15 min do zračne luke Split<br />
-                    Besplatan parking u garaži
+                    Mogućnost parkirnog mjesta
                   </p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Location() {
                 <div>
                   <h3 className="text-lg font-bold mb-1" style={{ color: '#0a0a0a' }}>Radno Vrijeme</h3>
                   <p style={{ color: '#525252' }}>
-                    Recepcija: Pon-Pet 8:00 - 20:00<br />
+                    Radno vrijeme: Pon-Pet 8:00 - 18:00<br />
                     Pristup uredu: 24/7
                   </p>
                 </div>
