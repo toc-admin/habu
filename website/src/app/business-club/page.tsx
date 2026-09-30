@@ -106,7 +106,7 @@ export default function BusinessClubPage() {
       <PageHero
         title="Business Club"
         subtitle="Ekskluzivna zajednica ambicioznih profesionalaca"
-        backgroundImage="/images/IMG_7507.JPG"
+        backgroundImage="/images/cafe-bar.jpg"
       />
 
       {/* Intro Section */}

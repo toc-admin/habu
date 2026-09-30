@@ -21,7 +21,7 @@ export default function ContactPage() {
       <PageHero
         title="Kontaktirajte Nas"
         subtitle="Tu smo za sva vaša pitanja i rezervacije"
-        backgroundImage="/images/IMG_7508.JPG"
+        backgroundImage="/images/conference-room.jpg"
       />
       <Contact />
     </>

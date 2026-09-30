@@ -22,7 +22,7 @@ export default function FAQPage() {
       <PageHero
         title="Česta Pitanja"
         subtitle="Sve što trebate znati o Habu uredima"
-        backgroundImage="/images/IMG_7506.JPG"
+        backgroundImage="/images/corridor.jpg"
       />
 
       <FAQ />

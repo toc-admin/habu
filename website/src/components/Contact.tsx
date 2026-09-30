@@ -34,7 +34,7 @@ export default function Contact() {
     >
       {/* Background Image */}
       <div className="absolute inset-0" style={{ opacity: 0.2 }}>
-        <Image src="/images/IMG_7508.JPG" alt="Background" fill className="object-cover" />
+        <Image src="/images/conference-room.jpg" alt="Background" fill className="object-cover" />
       </div>
 
       <div

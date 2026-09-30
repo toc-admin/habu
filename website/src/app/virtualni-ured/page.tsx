@@ -116,7 +116,7 @@ export default function VirtualOfficePage() {
       <PageHero
         title="Virtualni Ured"
         subtitle="Prestižna adresa bez troškova fizičkog prostora"
-        backgroundImage="/images/IMG_7505.JPG"
+        backgroundImage="/images/glass-offices.jpg"
       />
 
       {/* Intro Section */}

@@ -21,21 +21,21 @@ const roomTypes = [
     name: 'Dojo',
     capacity: 'Mala soba · do 8 osoba',
     price: '60',
-    image: '/images/IMG_7503.JPG',
+    image: '/images/meeting-room.jpg',
     features: ['Smart TV', 'Video konferencije', 'Whiteboard', 'Kava i voda'],
   },
   {
     name: 'Rei',
     capacity: 'Srednja soba · do 30 osoba',
     price: '120',
-    image: '/images/IMG_7508.JPG',
+    image: '/images/conference-room.jpg',
     features: ['Smart TV', 'Profesionalna kamera', 'Konferencijski mikrofon', 'Catering opcija'],
   },
   {
     name: 'Sakura',
     capacity: 'Velika soba · do 60 osoba',
     price: '280',
-    image: '/images/c2b27a6b-1d54-4525-97ea-d439d39990e4.JPG',
+    image: '/images/event-space.jpg',
     features: ['Premium AV sustav', 'Video konferencije', 'Catering opcija', 'Podrška recepcije'],
   },
 ];
@@ -85,7 +85,7 @@ export default function MeetingRoomsPage() {
       <PageHero
         title="Sobe za Sastanke"
         subtitle="Impresivni prostori za uspješne dogovore"
-        backgroundImage="/images/IMG_7503.JPG"
+        backgroundImage="/images/meeting-room.jpg"
       />
 
       {/* Intro Section */}
@@ -119,7 +119,7 @@ export default function MeetingRoomsPage() {
             </div>
             <div data-animate="reveal-right" className="relative aspect-[4/3]">
               <Image
-                src="/images/IMG_7503.JPG"
+                src="/images/meeting-room.jpg"
                 alt="Soba za sastanke"
                 fill
                 className="object-cover"

@@ -81,7 +81,7 @@ export default function Hero() {
       {/* Background Image */}
       <div ref={imageRef} className="absolute inset-0">
         <Image
-          src="/images/IMG_7507.JPG"
+          src="/images/lounge.jpg"
           alt="Habu Premium Office Space"
           fill
           className="object-cover"

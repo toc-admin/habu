@@ -11,7 +11,7 @@ const spaces = [
     description: 'Potpuna privatnost i fleksibilnost. Vaš brend, vaš prostor, vaša pravila. Kompletno opremljeni uredi s premium namještajem.',
     price: 'od €800',
     period: '/mjesečno',
-    image: '/images/IMG_7504.JPG',
+    image: '/images/private-office.jpg',
     features: ['Potpuna privatnost', 'Prilagodljivi prostor', 'Premium namještaj', 'Prirodno svjetlo'],
   },
   {
@@ -21,7 +21,7 @@ const spaces = [
     description: 'Uz sustav rezervacije putem naše aplikacije osigurajte prostor za sastanke kada god vam zatreba. Najnovija AV tehnologija i besprijekoran servis osigurat će vam sve što je potrebno.',
     price: 'od €60',
     period: '/dan',
-    image: '/images/IMG_7503.JPG',
+    image: '/images/meeting-room.jpg',
     features: ['AV tehnologija', 'Video konferencije', 'Catering opcija', 'Recepcija'],
   },
   {
@@ -31,7 +31,7 @@ const spaces = [
     description: 'Od radionica do prezentacija proizvoda. Modularan prostor koji se prilagođava vašim potrebama.',
     price: 'od €300',
     period: '/dan',
-    image: '/images/c2b27a6b-1d54-4525-97ea-d439d39990e4.JPG',
+    image: '/images/event-space.jpg',
     features: ['Modularni raspored', 'Profesionalno osvjetljenje', 'Sound sistem', 'Podrška organizacije'],
   },
   {
@@ -41,7 +41,7 @@ const spaces = [
     description: 'Savršeno za freelancere i nomade. Pristup svim sadržajima bez dugoročnih obveza.',
     price: 'od €40',
     period: '/dan',
-    image: '/images/IMG_7505.JPG',
+    image: '/images/glass-offices.jpg',
     features: ['Bez obveza', 'Svi sadržaji', 'Networking', 'Brzi internet'],
   },
 ];

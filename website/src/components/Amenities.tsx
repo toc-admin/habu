@@ -116,7 +116,7 @@ export default function Amenities() {
           <div className="relative" data-animate="reveal-left">
             <div className="relative overflow-hidden" style={{ aspectRatio: '4/5' }}>
               <Image
-                src="/images/IMG_7506.JPG"
+                src="/images/corridor.jpg"
                 alt="Habu Premium Interior"
                 fill
                 className="object-cover"

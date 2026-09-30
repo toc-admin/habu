@@ -60,7 +60,7 @@ export default function AboutPage() {
       <PageHero
         title="O Nama"
         subtitle="Više od ureda - vaš partner u rastu"
-        backgroundImage="/images/IMG_7506.JPG"
+        backgroundImage="/images/corridor.jpg"
       />
 
       {/* Story Section */}
@@ -114,7 +114,7 @@ export default function AboutPage() {
             <div data-animate="reveal-right" className="relative">
               <div
                 className="aspect-[4/3] bg-cover bg-center"
-                style={{ backgroundImage: 'url(/images/IMG_7507.JPG)' }}
+                style={{ backgroundImage: 'url(/images/lounge.jpg)' }}
               />
               <div
                 className="absolute -bottom-6 -left-6 w-48 h-48 bg-coral flex items-center justify-center"

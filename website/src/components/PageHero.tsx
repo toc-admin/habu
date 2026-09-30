@@ -53,7 +53,7 @@ export default function PageHero({ title, subtitle, backgroundImage }: PageHeroP
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={backgroundImage || '/images/IMG_7507.JPG'}
+          src={backgroundImage || '/images/lounge.jpg'}
           alt={title}
           fill
           className="object-cover"

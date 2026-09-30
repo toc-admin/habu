@@ -9,13 +9,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-  { src: '/images/IMG_7507.JPG', alt: 'Lounge Area', caption: 'Lounge' },
-  { src: '/images/IMG_7504.JPG', alt: 'Private Office', caption: 'Privatni Ured' },
-  { src: '/images/IMG_7503.JPG', alt: 'Meeting Room', caption: 'Soba za Sastanke' },
-  { src: '/images/IMG_7505.JPG', alt: 'Glass Offices', caption: 'Open Space' },
-  { src: '/images/c2b27a6b-1d54-4525-97ea-d439d39990e4.JPG', alt: 'Event Space', caption: 'Event Prostor' },
-  { src: '/images/IMG_7508.JPG', alt: 'Conference Room', caption: 'Konferencijska Soba' },
-  { src: '/images/IMG_7506.JPG', alt: 'Corridor', caption: 'Premium Interijer' },
+  { src: '/images/lounge.jpg', alt: 'Lounge Area', caption: 'Lounge' },
+  { src: '/images/private-office.jpg', alt: 'Private Office', caption: 'Privatni Ured' },
+  { src: '/images/meeting-room.jpg', alt: 'Meeting Room', caption: 'Soba za Sastanke' },
+  { src: '/images/glass-offices.jpg', alt: 'Glass Offices', caption: 'Open Space' },
+  { src: '/images/event-space.jpg', alt: 'Event Space', caption: 'Event Prostor' },
+  { src: '/images/conference-room.jpg', alt: 'Conference Room', caption: 'Konferencijska Soba' },
+  { src: '/images/corridor.jpg', alt: 'Corridor', caption: 'Premium Interijer' },
+  { src: '/images/cafe-bar.jpg', alt: 'Caffe Bar', caption: 'Caffe Bar' },
 ];
 
 export default function Gallery() {

@@ -100,7 +100,7 @@ export default function OfficeRentalPage() {
       <PageHero
         title="Najam Ureda"
         subtitle="Privatni uredi za timove od 1-8 osoba"
-        backgroundImage="/images/IMG_7504.JPG"
+        backgroundImage="/images/private-office.jpg"
       />
 
       {/* Intro Section */}
@@ -134,7 +134,7 @@ export default function OfficeRentalPage() {
             </div>
             <div data-animate="reveal-right" className="relative aspect-[4/3]">
               <Image
-                src="/images/IMG_7504.JPG"
+                src="/images/private-office.jpg"
                 alt="Privatni ured"
                 fill
                 className="object-cover"
