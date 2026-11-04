@@ -12,12 +12,37 @@ export default function Contact() {
     phone: '',
     interest: '',
     message: '',
+    website: '',
   });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Hvala na upitu! Javit ćemo vam se uskoro.');
+    if (status === 'sending') return;
+    setStatus('sending');
+    setErrorMessage('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        setStatus('error');
+        setErrorMessage(data.error ?? 'Slanje nije uspjelo. Pokušajte ponovno.');
+        return;
+      }
+
+      setStatus('success');
+      setFormData({ name: '', email: '', company: '', phone: '', interest: '', message: '', website: '' });
+    } catch {
+      setStatus('error');
+      setErrorMessage('Slanje nije uspjelo. Provjerite internetsku vezu i pokušajte ponovno.');
+    }
   };
 
   const handleChange = (
@@ -256,12 +281,50 @@ export default function Contact() {
                 />
               </div>
 
-              <button type="submit" className="btn-primary w-full justify-center">
-                <span>Pošalji Upit</span>
+              {/* Honeypot — skriveno polje protiv spama */}
+              <input
+                type="text"
+                name="website"
+                value={formData.website}
+                onChange={handleChange}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px' }}
+              />
+
+              <button
+                type="submit"
+                disabled={status === 'sending'}
+                className="btn-primary w-full justify-center"
+                style={status === 'sending' ? { opacity: 0.6, cursor: 'wait' } : undefined}
+              >
+                <span>{status === 'sending' ? 'Slanje...' : 'Pošalji Upit'}</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </button>
+
+              {status === 'success' && (
+                <p
+                  className="text-sm text-center font-semibold p-4"
+                  style={{ color: '#15803d', backgroundColor: '#f0fdf4' }}
+                  role="status"
+                >
+                  Hvala na upitu! Javit ćemo vam se unutar 24 sata.
+                </p>
+              )}
+              {status === 'error' && (
+                <p
+                  className="text-sm text-center font-semibold p-4"
+                  style={{ color: '#b91c1c', backgroundColor: '#fef2f2' }}
+                  role="alert"
+                >
+                  {errorMessage} Možete nas kontaktirati i na{' '}
+                  <a href="mailto:info@habu.hr" className="underline">info@habu.hr</a> ili{' '}
+                  <a href="tel:+38517730093" className="underline">+385 1 7730 093</a>.
+                </p>
+              )}
 
               <p className="text-xs text-center" style={{ color: '#737373' }}>
                 Slanjem forme pristajete na našu{' '}
