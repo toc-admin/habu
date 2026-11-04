@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://habu.hr'),
   title: 'Habu | Premium Servisani Uredi u Splitu',
   description:
     'Premium servisani uredi u srcu Splita. Privatni uredi, sobe za sastanke i fleksibilni radni prostori dizajnirani za uspjeh. Rezervirajte obilazak danas.',
@@ -40,6 +41,33 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Habu',
+  legalName: 'Habu d.o.o.',
+  description:
+    'Premium servisani uredi u Splitu. Privatni uredi, sobe za sastanke, virtualni ured i fleksibilni radni prostori.',
+  url: 'https://habu.hr',
+  logo: 'https://habu.hr/habu-logo.svg',
+  image: 'https://habu.hr/opengraph-image.jpg',
+  telephone: '+385 1 7730 093',
+  email: 'info@habu.hr',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Matice Hrvatske 15',
+    addressLocality: 'Split',
+    postalCode: '21000',
+    addressCountry: 'HR',
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:00',
+    closes: '18:00',
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -48,6 +76,10 @@ export default function RootLayout({
   return (
     <html lang="hr">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <LenisProvider>
           <AnimationProvider>
             <Navigation />

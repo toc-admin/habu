@@ -13,10 +13,6 @@ const faqs = [
     answer: 'Sve! Brzi internet (1 Gbps), 24/7 pristup, recepcija, premium kava i čaj, čišćenje, komunalije, korištenje zajedničkih prostora, pristup kuhinji i lounge zoni. Bez skrivenih troškova.',
   },
   {
-    question: 'Mogu li prilagoditi prostor svom brendu?',
-    answer: 'Apsolutno. Privatni uredi mogu se brendirati prema vašim željama - od natpisa na vratima do kompletnog uređenja interijera. Naš tim vam stoji na raspolaganju za sve prilagodbe.',
-  },
-  {
     question: 'Kako funkcionira registracija tvrtke na adresu?',
     answer: 'Nudimo premium virtualnu adresu i registraciju sjedišta tvrtke. Primamo vašu poštu, pakete i goste u vaše ime. Idealno za tvrtke koje žele prestižnu adresu bez fizičkog ureda.',
   },
@@ -34,7 +30,7 @@ const faqs = [
   },
   {
     question: 'Imate li event prostor?',
-    answer: 'Da, naš modularni event prostor prima do 60 osoba i savršen je za prezentacije, radionice, team buildinge i privatne događaje. Dostupna je profesionalna AV oprema i catering opcije.',
+    answer: 'Da, imamo modularni event prostor u koji primamo do 60 osoba. Savršen je za prezentacije, radionice, team buildinge i privatne događaje. Dostupna je profesionalna AV oprema i catering opcije.',
   },
 ];
 

@@ -12,7 +12,6 @@ const images = [
   { src: '/images/lounge.jpg', alt: 'Lounge Area', caption: 'Lounge' },
   { src: '/images/private-office.jpg', alt: 'Private Office', caption: 'Privatni Ured' },
   { src: '/images/meeting-room.jpg', alt: 'Meeting Room', caption: 'Soba za Sastanke' },
-  { src: '/images/glass-offices.jpg', alt: 'Glass Offices', caption: 'Open Space' },
   { src: '/images/event-space.jpg', alt: 'Event Space', caption: 'Event Prostor' },
   { src: '/images/conference-room.jpg', alt: 'Conference Room', caption: 'Konferencijska Soba' },
   { src: '/images/corridor.jpg', alt: 'Corridor', caption: 'Premium Interijer' },
