@@ -17,7 +17,7 @@ const spaces = [
   {
     id: 'meeting-room',
     title: 'Sobe za Sastanke',
-    subtitle: 'Kapacitet do 10 osoba',
+    subtitle: 'Kapacitet do 60 osoba',
     description: 'Uz sustav rezervacije putem naše aplikacije osigurajte prostor za sastanke kada god vam zatreba. Najnovija AV tehnologija i besprijekoran servis osigurat će vam sve što je potrebno.',
     price: 'od €60',
     period: '/dan',

@@ -34,7 +34,7 @@ const tiers = [
     price: '299',
     description: 'Za aktivne profesionalce koji redovito koriste prostor',
     features: [
-      '15 dana hot desk pristupa mjesečno',
+      '10 dana hot desk pristupa mjesečno',
       '8 sati meeting sobe',
       'Pristup svim lokacijama',
       'Prioritetne rezervacije',
@@ -43,21 +43,6 @@ const tiers = [
     ],
     cta: 'Odaberi',
     popular: true,
-  },
-  {
-    name: 'Executive',
-    price: '499',
-    description: 'Neograničen pristup za maksimalnu produktivnost',
-    features: [
-      'Neograničen hot desk pristup',
-      '15 sati meeting sobe',
-      'Dedicirani radni stol',
-      'VIP networking događaji',
-      'Telefonska sekretarica',
-      'Parking mjesto',
-      'Osobni account manager',
-    ],
-    cta: 'Kontaktiraj nas',
   },
 ];
 
@@ -156,7 +141,11 @@ export default function BusinessClubPage() {
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8" data-animate-stagger>
+          <div
+            className="grid md:grid-cols-2 gap-8"
+            style={{ maxWidth: '900px', marginLeft: 'auto', marginRight: 'auto' }}
+            data-animate-stagger
+          >
             {tiers.map((tier, index) => (
               <div
                 key={index}
