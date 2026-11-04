@@ -32,8 +32,8 @@ export default function Location() {
               </h2>
               <p className="text-lg leading-relaxed mb-10" style={{ color: '#525252' }}>
                 Strateška lokacija koja kombinira pristupačnost s prestižom.
-                Samo nekoliko koraka od centra grada, s izvrsnim prometnim
-                vezama i svim sadržajima na dohvat ruke.
+                Izvrsno povezana lokacija s brzim pristupom centru grada i
+                svim sadržajima na dohvat ruke.
               </p>
             </div>
 
@@ -64,8 +64,9 @@ export default function Location() {
                 <div>
                   <h3 className="text-lg font-bold mb-1" style={{ color: '#0a0a0a' }}>Povezanost</h3>
                   <p style={{ color: '#525252' }}>
+                    2,6 km od gradske rive<br />
                     5 min do autobusnog kolodvora<br />
-                    15 min do zračne luke Split<br />
+                    30 min do zračne luke Split<br />
                     Mogućnost parkirnog mjesta
                   </p>
                 </div>
