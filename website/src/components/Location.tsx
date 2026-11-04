@@ -49,7 +49,7 @@ export default function Location() {
                 <div>
                   <h3 className="text-lg font-bold mb-1" style={{ color: '#0a0a0a' }}>Adresa</h3>
                   <p style={{ color: '#525252' }}>
-                    Ulica Domovinskog rata 61<br />
+                    Matice Hrvatske 15<br />
                     21000 Split, Hrvatska
                   </p>
                 </div>
@@ -89,11 +89,11 @@ export default function Location() {
 
             {/* Contact CTA */}
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4" data-animate="reveal-up">
-              <a href="tel:+38521123456" className="btn-primary">
+              <a href="tel:+38517730093" className="btn-primary">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
                   <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
-                <span>+385 21 123 456</span>
+                <span>+385 1 7730 093</span>
               </a>
               <a href="mailto:info@habu.hr" className="btn-outline-dark">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
@@ -111,7 +111,7 @@ export default function Location() {
               style={{ aspectRatio: '4/3', minHeight: '280px', backgroundColor: '#f5f5f5' }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.4!2d16.4402!3d43.5147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDMwJzUzLjAiTiAxNsKwMjYnMjQuNyJF!5e0!3m2!1sen!2shr!4v1234567890"
+                src="https://www.google.com/maps?q=Matice+Hrvatske+15,+21000+Split,+Croatia&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: 'grayscale(100%) contrast(1.1)' }}
@@ -141,7 +141,7 @@ export default function Location() {
                   </div>
                 </div>
                 <a
-                  href="https://maps.google.com/?q=Split,Croatia"
+                  href="https://maps.google.com/?q=Matice+Hrvatske+15,+21000+Split,+Croatia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-2 sm:py-3 text-white text-xs sm:text-sm font-semibold transition-colors"

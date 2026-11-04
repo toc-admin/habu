@@ -93,7 +93,8 @@ export default function AboutPage() {
                   sljedeći korak.
                 </p>
                 <p className="leading-relaxed">
-                  U suradnji s vlasnikom prostora i partnerima koji dijele istu viziju,
+                  U suradnji s Paladina Spaces d.o.o., koji je ujedno i vlasnik
+                  prostora, i partnerima koji dijele istu viziju,
                   kreirali smo coworking prostor kakav Split do sada nije imao — mjesto
                   gdje se kvaliteta ne podrazumijeva, nego se gradi u svaki detalj. Od
                   odabira ergonomskog namještaja do organizacije prostora, svaka odluka

@@ -36,10 +36,10 @@ export default function GDPRPage() {
             </h2>
             <p style={{ color: '#525252' }}>
               Habu d.o.o.<br />
-              Ulica Domovinskog rata 61<br />
+              Matice Hrvatske 15<br />
               21000 Split, Hrvatska<br />
               Email: <a href="mailto:gdpr@habu.hr" className="text-coral hover:underline">gdpr@habu.hr</a><br />
-              Telefon: +385 21 123 456
+              Telefon: +385 1 7730 093
             </p>
 
             <h2 className="text-2xl font-bold mt-12 mb-4" style={{ color: '#0a0a0a' }}>
@@ -139,8 +139,8 @@ export default function GDPRPage() {
             </p>
             <p style={{ color: '#525252' }}>
               Email: <a href="mailto:gdpr@habu.hr" className="text-coral hover:underline">gdpr@habu.hr</a><br />
-              Telefon: +385 21 123 456<br />
-              Adresa: Habu d.o.o., Ulica Domovinskog rata 61, 21000 Split
+              Telefon: +385 1 7730 093<br />
+              Adresa: Habu d.o.o., Matice Hrvatske 15, 21000 Split
             </p>
 
             <h2 className="text-2xl font-bold mt-12 mb-4" style={{ color: '#0a0a0a' }}>

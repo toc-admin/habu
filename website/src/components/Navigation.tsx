@@ -452,8 +452,8 @@ export default function Navigation() {
           <div className="px-8 py-6 border-t border-white/10">
             <div className="flex items-center justify-between text-sm">
               <div className="space-y-1">
-                <a href="tel:+38521123456" className="block text-white/60 hover:text-coral transition-colors">
-                  +385 21 123 456
+                <a href="tel:+38517730093" className="block text-white/60 hover:text-coral transition-colors">
+                  +385 1 7730 093
                 </a>
                 <a href="mailto:info@habu.hr" className="block text-white/60 hover:text-coral transition-colors">
                   info@habu.hr

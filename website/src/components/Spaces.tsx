@@ -8,7 +8,7 @@ const spaces = [
     id: 'private-office',
     title: 'Privatni Ured',
     subtitle: 'Za timove od 1-8 osoba',
-    description: 'Potpuna privatnost i fleksibilnost. Vaš brend, vaš prostor, vaša pravila. Kompletno opremljeni uredi s premium namještajem.',
+    description: 'Potpuna privatnost i fleksibilnost. Kompletno opremljeni uredi s premium namještajem.',
     price: 'od €800',
     period: '/mjesečno',
     image: '/images/private-office.jpg',

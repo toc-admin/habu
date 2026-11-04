@@ -81,8 +81,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm" style={{ color: '#737373' }}>Telefon</p>
-                  <a href="tel:+38521123456" className="text-white font-semibold hover:text-coral transition-colors">
-                    +385 21 123 456
+                  <a href="tel:+38517730093" className="text-white font-semibold hover:text-coral transition-colors">
+                    +385 1 7730 093
                   </a>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm" style={{ color: '#737373' }}>Adresa</p>
-                  <p className="text-white font-semibold">Ulica Domovinskog rata 61, Split</p>
+                  <p className="text-white font-semibold">Matice Hrvatske 15, Split</p>
                 </div>
               </div>
             </div>

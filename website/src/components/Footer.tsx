@@ -51,14 +51,26 @@ export default function Footer() {
               Premium servisani uredi u srcu Splita. Dizajnirani za uspjeh.
             </p>
             <div className="space-y-2">
-              <p className="text-sm" style={{ color: '#737373' }}>Ulica Domovinskog rata 61</p>
+              <p className="text-sm" style={{ color: '#737373' }}>Matice Hrvatske 15</p>
               <p className="text-sm" style={{ color: '#737373' }}>21000 Split, Hrvatska</p>
-              <a href="tel:+38521123456" className="block text-white font-semibold hover:text-coral transition-colors">
-                +385 21 123 456
+              <a href="tel:+38517730093" className="block text-white font-semibold hover:text-coral transition-colors">
+                +385 1 7730 093
               </a>
               <a href="mailto:info@habu.hr" className="block text-white font-semibold hover:text-coral transition-colors">
                 info@habu.hr
               </a>
+            </div>
+            <div className="mt-8">
+              <p className="text-xs uppercase mb-3" style={{ color: '#737373', letterSpacing: '0.05em' }}>
+                Vlasnik prostora
+              </p>
+              <Image
+                src="/the-office-company-logo.png"
+                alt="The Office Company"
+                width={135}
+                height={37}
+                className="brightness-0 invert opacity-70"
+              />
             </div>
           </div>
 
@@ -151,6 +163,18 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
             <p className="text-sm" style={{ color: '#737373' }}>
               © {currentYear} Habu. Sva prava pridržana.
+            </p>
+
+            <p className="text-sm" style={{ color: '#737373' }}>
+              Made by{' '}
+              <a
+                href="https://www.ninefold.eu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold hover:text-coral transition-colors"
+              >
+                Ninefold
+              </a>
             </p>
 
             {/* Social Links */}
