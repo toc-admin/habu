@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     question: 'Imate li event prostor?',
-    answer: 'Da, naš modularni event prostor prima do 50 osoba i savršen je za prezentacije, radionice, team buildinge i privatne događaje. Dostupna je profesionalna AV oprema i catering opcije.',
+    answer: 'Da, naš modularni event prostor prima do 60 osoba i savršen je za prezentacije, radionice, team buildinge i privatne događaje. Dostupna je profesionalna AV oprema i catering opcije.',
   },
 ];
 

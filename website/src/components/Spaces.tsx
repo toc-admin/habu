@@ -17,7 +17,7 @@ const spaces = [
   {
     id: 'meeting-room',
     title: 'Sobe za Sastanke',
-    subtitle: 'Kapacitet do 60 osoba',
+    subtitle: 'Kapacitet do 10 osoba',
     description: 'Uz sustav rezervacije putem naše aplikacije osigurajte prostor za sastanke kada god vam zatreba. Najnovija AV tehnologija i besprijekoran servis osigurat će vam sve što je potrebno.',
     price: 'od €60',
     period: '/dan',
@@ -27,22 +27,33 @@ const spaces = [
   {
     id: 'event-space',
     title: 'Event Prostor',
-    subtitle: 'Do 50 sudionika',
+    subtitle: 'Do 60 sudionika',
     description: 'Od radionica do prezentacija proizvoda. Modularan prostor koji se prilagođava vašim potrebama.',
     price: 'od €300',
     period: '/dan',
     image: '/images/event-space.jpg',
-    features: ['Modularni raspored', 'Profesionalno osvjetljenje', 'Sound sistem', 'Podrška organizacije'],
+    features: ['Modularni raspored', 'Profesionalno osvjetljenje', 'Sound sistem', 'Podrška pri organizaciji'],
   },
   {
     id: 'hot-desk',
-    title: 'Dnevni Najam',
+    title: 'Dnevni najam ureda',
     subtitle: 'Fleksibilno radno mjesto',
     description: 'Savršeno za freelancere i nomade. Pristup svim sadržajima bez dugoročnih obveza.',
     price: 'od €40',
     period: '/dan',
     image: '/images/glass-offices.jpg',
     features: ['Bez obveza', 'Svi sadržaji', 'Networking', 'Brzi internet'],
+  },
+  {
+    id: 'business-club',
+    title: 'Business Club Membership',
+    subtitle: 'Ekskluzivno članstvo',
+    description: 'Članstvo s pristupom svim prostorima, prioritetnim rezervacijama i networking događajima.',
+    price: 'od €129',
+    period: '/mjesečno',
+    image: '/images/lounge.jpg',
+    features: ['Pristup lounge zoni', 'Prioritetne rezervacije', 'Networking događaji', 'Sati meeting sobe uključeni'],
+    href: '/business-club',
   },
 ];
 
@@ -155,7 +166,7 @@ export default function Spaces() {
 
                   {/* CTA */}
                   <Link
-                    href="/kontakt"
+                    href={space.href ?? '/kontakt'}
                     className="inline-flex items-center gap-2 text-sm font-semibold group/link"
                     style={{ color: '#0a0a0a' }}
                   >

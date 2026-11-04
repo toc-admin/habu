@@ -235,7 +235,7 @@ export default function Contact() {
                   <option value="private-office">Privatni ured</option>
                   <option value="meeting-room">Sobe za sastanke</option>
                   <option value="event-space">Event prostor</option>
-                  <option value="hot-desk">Dnevni najam</option>
+                  <option value="hot-desk">Dnevni najam ureda</option>
                   <option value="virtual-office">Virtualni ured</option>
                   <option value="other">Ostalo</option>
                 </select>

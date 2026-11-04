@@ -5,7 +5,7 @@ import PageHero from '@/components/PageHero';
 
 export const metadata: Metadata = {
   title: 'Sobe za Sastanke | Habu Premium Uredi Split',
-  description: 'Sobe za sastanke Dojo, Rei i Sakura u Splitu s kapacitetom do 60 osoba. AV tehnologija, video konferencije, catering opcija i podcast booth.',
+  description: 'Sobe za sastanke Dojo, Rei i Sakura u Splitu s kapacitetom do 10 osoba. AV tehnologija, video konferencije, catering opcija i podcast booth.',
   openGraph: {
     title: 'Sobe za Sastanke | Habu Premium Uredi Split',
     description: 'Profesionalne sobe za sastanke s vrhunskom opremom za uspješne poslovne susrete.',
@@ -26,14 +26,14 @@ const roomTypes = [
   },
   {
     name: 'Rei',
-    capacity: 'Srednja soba · do 30 osoba',
+    capacity: 'Srednja soba · do 8 osoba',
     price: '120',
     image: '/images/conference-room.jpg',
     features: ['Smart TV', 'Profesionalna kamera', 'Konferencijski mikrofon', 'Catering opcija'],
   },
   {
     name: 'Sakura',
-    capacity: 'Velika soba · do 60 osoba',
+    capacity: 'Velika soba · do 10 osoba',
     price: '280',
     image: '/images/event-space.jpg',
     features: ['Premium AV sustav', 'Video konferencije', 'Catering opcija', 'Podrška recepcije'],

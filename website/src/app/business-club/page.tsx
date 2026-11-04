@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const tiers = [
   {
     name: 'Essential',
-    price: '149',
+    price: '129',
     description: 'Za povremene korisnike koji trebaju fleksibilan pristup',
     features: [
       '5 dana hot desk pristupa mjesečno',
